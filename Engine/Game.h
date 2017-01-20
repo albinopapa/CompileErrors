@@ -25,6 +25,7 @@
 #include "Graphics.h"
 #include "Ship.h"
 #include "Enemy.h"
+#include "Projectile.h"
 #include "Upgrade.h"
 #include "Timer.h"
 
@@ -45,9 +46,11 @@ private:
 	MainWindow& wnd;
 	Graphics gfx;
 	Ship ship;
-	Upgrade upgrade;
 	Enemy enemy;
+	Projectile projectile;
+	Upgrade upgrade;
 	Timer timer;
+	Input input;
 	/********************************/
 	/*  User Variables              */
 	/********************************/

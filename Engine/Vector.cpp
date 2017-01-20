@@ -37,8 +37,7 @@ float Vector::GetMagnitude()const
 	return sqrt( x * x + y * y);
 }
 
-void Vector::Normalize()
+Vector Vector::Normalize()
 {
-	x = x / GetMagnitude();
-	y = y / GetMagnitude();
+	return Vector(x / GetMagnitude(), y / GetMagnitude());
 }

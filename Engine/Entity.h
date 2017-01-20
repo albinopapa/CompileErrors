@@ -6,7 +6,7 @@
 class Entity
 {
 public:
-	Entity();
+	Entity( Vector Position, int Width, int Height);
 	~Entity();
 	void Update();
 	void Draw( Graphics &Gfx, int Square_width, int Square_height);

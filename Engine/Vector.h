@@ -10,7 +10,7 @@ struct Vector
 	Vector operator*(const Vector &VecRhs)const;
 
 	float GetMagnitude()const;
-	void Normalize();
+	Vector Normalize();
 
 	float x, y;
 };

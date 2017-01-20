@@ -3,9 +3,7 @@
 
 Ship::Ship( Vector Position, int Width, int Height )
 	:
-	position( Position ),
-	width(Width),
-	height(Height)
+	Entity( Position, Width, Height )
 {
 }
 

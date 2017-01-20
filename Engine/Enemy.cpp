@@ -3,6 +3,8 @@
 
 
 Enemy::Enemy( Vector Position, int Width, int Height)
+	:
+	Entity( Position, Width, Height )
 {
 }
 
