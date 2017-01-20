@@ -1,15 +1,15 @@
 #pragma once
 
-#include "Keyboard.h"
+#include "MainWindow.h"
 
 class Input
 {
 public:
 	Input();
 
-	void Update( Keyboard &KbdRef );
+	void Update( MainWindow &Wnd );
 
-	bool IsSpacePressed( Keyboard &KbdRef );
+	bool IsSpacePressed( MainWindow &Wnd );
 public:
 	bool is_space_pressed;
 };

@@ -3,14 +3,14 @@
 Input::Input()
 {}
 
-void Input::Update( Keyboard &KbdRef )
+void Input::Update( MainWindow &Wnd)
 {
-	is_space_pressed = IsSpacePressed( KbdRef );
+	is_space_pressed = IsSpacePressed( Wnd );
 }
 
-bool Input::IsSpacePressed( Keyboard &KbdRef )
+bool Input::IsSpacePressed( MainWindow &Wnd )
 {
-	if (KbdRef.KeyIsPressed( VK_LEFT )
+	if (Wnd.kbd.KeyIsPressed( VK_LEFT ) )
 	{
 		is_space_pressed = true;
 		return true;
