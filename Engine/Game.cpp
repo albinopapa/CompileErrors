@@ -24,7 +24,9 @@
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
-	gfx( wnd )
+	gfx( wnd ),
+	ship(Vector( 400.f, 300.f ), ),
+	upgrade( ship )
 {
 }
 
@@ -38,8 +40,10 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	const float frame_time = timer.Reset();
 }
 
 void Game::ComposeFrame()
 {
+	ship.Draw(gfx, );
 }

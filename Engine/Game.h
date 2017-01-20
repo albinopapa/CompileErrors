@@ -23,6 +23,10 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Graphics.h"
+#include "Ship.h"
+#include "Enemy.h"
+#include "Upgrade.h"
+#include "Timer.h"
 
 class Game
 {
@@ -40,6 +44,10 @@ private:
 private:
 	MainWindow& wnd;
 	Graphics gfx;
+	Ship ship;
+	Upgrade upgrade;
+	Enemy enemy;
+	Timer timer;
 	/********************************/
 	/*  User Variables              */
 	/********************************/
