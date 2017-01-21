@@ -15,12 +15,14 @@ void EntityMovement::Update()
 
 void EntityMovement::MoveProjectile()
 {
+	if( object.input.is_space_pressed )
+	{
 
 }
 
 void EntityMovement:MoveShip()
 {
-	if( object
+
 }
 
 void EntityMovement::MoveEnemy()
