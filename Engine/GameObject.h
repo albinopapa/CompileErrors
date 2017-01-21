@@ -12,8 +12,8 @@
 class GameObject
 {
 public:
-	GameObject( MainWindow &MainWin );
-		
+	GameObject();
+	GameObject( MainWindow &Wnd);
 
 public:
 	MainWindow &wnd;

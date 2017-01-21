@@ -1,5 +1,7 @@
 #include "Entity.h"
 
+Entity::Entity(){}
+
 Entity::Entity( Vector Position, int Width, int Height)
 	:
 	position( Position ),

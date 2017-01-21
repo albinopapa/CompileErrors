@@ -5,6 +5,7 @@
 class Input
 {
 public:
+	Input();
 	Input( GameObject &Object );
 
 	void Update();

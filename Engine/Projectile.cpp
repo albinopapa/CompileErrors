@@ -1,6 +1,6 @@
 #include "Projectile.h"
 
-
+Projectile::Projectile(){}
 
 Projectile::Projectile( Vector Position, int Width, int Height )
 	:

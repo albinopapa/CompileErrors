@@ -1,5 +1,7 @@
 #include "EntityMovement.h"
 
+EntityMovement::EntityMovement(){}
+
 EntityMovement::EntityMovement( GameObject &Object )
 	:
 	object( Object )

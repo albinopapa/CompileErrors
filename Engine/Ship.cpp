@@ -1,5 +1,6 @@
 #include "Ship.h"
 
+Ship::Ship(){}
 
 Ship::Ship( Vector Position, int Width, int Height )
 	:

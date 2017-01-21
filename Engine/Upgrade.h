@@ -5,6 +5,7 @@
 class Upgrade
 {
 public:
+	Upgrade();
 	Upgrade( GameObject &GameObject );
 	
 public:

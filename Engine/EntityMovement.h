@@ -5,6 +5,7 @@
 class EntityMovement
 {
 public:
+	EntityMovement();
 	EntityMovement( GameObject &Object );
 	void MoveProjectile();
 	void MoveShip();

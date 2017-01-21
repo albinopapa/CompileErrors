@@ -1,5 +1,7 @@
 #include "GameObject.h"
 
+GameObject::GameObject(){}
+
 GameObject::GameObject( MainWindow &Wnd )
 	:
 	wnd(Wnd),

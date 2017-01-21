@@ -7,6 +7,7 @@
 class Ship : public Entity
 {
 public:
+	Ship();
 	Ship( Vector Position, int Width, int Height);
 	~Ship();
 };
