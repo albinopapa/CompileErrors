@@ -1,11 +1,10 @@
 #pragma once
-#include "GameObject.h"
 
+class GameObject;
 
 class Input
 {
 public:
-	Input();
 	Input( GameObject &Object );
 
 	void Update();

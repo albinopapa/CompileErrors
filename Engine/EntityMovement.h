@@ -1,11 +1,10 @@
 #pragma once
 
-#include "GameObject.h"
+class GameObject;
 
 class EntityMovement
 {
 public:
-	EntityMovement();
 	EntityMovement( GameObject &Object );
 	void MoveProjectile();
 	void MoveShip();

@@ -1,11 +1,10 @@
 #pragma once
 
-#include "GameObject.h"
+class GameObject;
 
 class Upgrade
 {
 public:
-	Upgrade();
 	Upgrade( GameObject &GameObject );
 	
 public:

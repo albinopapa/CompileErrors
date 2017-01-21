@@ -12,7 +12,6 @@
 class GameObject
 {
 public:
-	GameObject();
 	GameObject( MainWindow &Wnd);
 
 public:

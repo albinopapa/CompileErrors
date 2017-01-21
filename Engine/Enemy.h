@@ -5,7 +5,7 @@
 class Enemy : public Entity
 {
 public:
-	Enemy(){}
+	Enemy() = default;
 	Enemy( Vector Position, int Width, int Height);
 	~Enemy();
 };

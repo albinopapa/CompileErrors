@@ -1,6 +1,6 @@
 #include "Upgrade.h"
+#include "GameObject.h"
 
-Upgrade::Upgrade(){}
 
 Upgrade::Upgrade( GameObject &GameObject )
 	:

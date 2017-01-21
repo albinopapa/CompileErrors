@@ -6,7 +6,7 @@
 class Entity
 {
 public:
-	Entity();
+	Entity() = default;
 	Entity( Vector Position, int Width, int Height);
 	~Entity();
 	void Update();

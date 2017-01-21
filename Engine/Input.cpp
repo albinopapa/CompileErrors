@@ -1,6 +1,5 @@
 #include "Input.h"
-
-Input::Input(){}
+#include "GameObject.h"
 
 Input::Input( GameObject &Object )
 	:
