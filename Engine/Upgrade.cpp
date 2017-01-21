@@ -4,5 +4,5 @@
 
 Upgrade::Upgrade( GameObject &GameObject )
 	:
-	object( &GameObject )
+	object( GameObject )
 {}

@@ -1,13 +1,13 @@
 #pragma once
+#include "GameObject.h"
 
-class MainWindow;
 
 class Input
 {
 public:
 	Input( GameObject &Object );
 
-	void Update( MainWindow &Wnd );
+	void Update();
 
 public:
 	bool is_space_pressed;

@@ -8,4 +8,3 @@ public:
 	Enemy( Vector Position, int Width, int Height);
 	~Enemy();
 };
-

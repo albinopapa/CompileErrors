@@ -1,7 +1,8 @@
 #include "Input.h"
 
-Input::Input( GameObject &GameObject )
-	object( GameObject )
+Input::Input( GameObject &Object )
+	:
+	object( Object )
 {}
 
 void Input::Update()

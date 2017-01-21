@@ -1,9 +1,6 @@
 #pragma once
 
-#include "Input.h"
-#include "Projectile.h"
-#include "Ship.h"
-#include "Enemy.h"
+#include "GameObject.h"
 
 class EntityMovement
 {
@@ -13,6 +10,7 @@ public:
 	void MoveShip();
 	void MoveEnemy();
 
+	void Update();
 public:
 	GameObject &object;
-}
+};

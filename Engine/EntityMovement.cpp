@@ -1,4 +1,4 @@
-#include "MovementController.h"
+#include "EntityMovement.h"
 
 EntityMovement::EntityMovement( GameObject &Object )
 	:
@@ -17,10 +17,11 @@ void EntityMovement::MoveProjectile()
 {
 	if( object.input.is_space_pressed )
 	{
+	}
 
 }
 
-void EntityMovement:MoveShip()
+void EntityMovement::MoveShip()
 {
 
 }

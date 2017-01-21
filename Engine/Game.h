@@ -23,12 +23,13 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Graphics.h"
-#include "Ship.h"
-#include "Enemy.h"
-#include "Projectile.h"
-#include "Upgrade.h"
-#include "EntityMovement.h"
-#include "Input.h"
+// #include "Ship.h"
+// #include "Enemy.h"
+// #include "Projectile.h"
+// #include "Upgrade.h"
+// #include "EntityMovement.h"
+// #include "Input.h"
+#include "GameObject.h"
 #include "Timer.h"
 
 class Game
@@ -53,6 +54,7 @@ private:
 	// Upgrade upgrade;
 	// EntityMovement movement;
 	// Input input;
+	GameObject object;
 	Timer timer;
 	/********************************/
 	/*  User Variables              */

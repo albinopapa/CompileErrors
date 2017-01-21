@@ -16,11 +16,11 @@ public:
 		
 
 public:
-	MainWindow &mainwin;
+	MainWindow &wnd;
 	Ship ship;
 	Enemy enemy;
 	Projectile projectile;
 	Upgrade upgrade;
 	Input input;
 	EntityMovement movement;
-}
+};

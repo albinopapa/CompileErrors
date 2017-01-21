@@ -25,6 +25,7 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
+	object( wnd )
 {
 }
 
@@ -43,6 +44,6 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
-	ship.Draw(gfx, ship.width, ship.height);
-	enemy.Draw(gfx, enemy.width, enemy.height);
+	object.ship.Draw(gfx, object.ship.width, object.ship.height);
+	object.enemy.Draw(gfx, object.enemy.width, object.enemy.height);
 }
