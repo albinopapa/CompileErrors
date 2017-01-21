@@ -1,14 +1,12 @@
 #pragma once
 
-#include "Ship.h"
+#include "GameObject.h"
 
 class Upgrade
 {
 public:
-	Upgrade( Ship &ShipRef );
-	~Upgrade();
+	Upgrade( GameObject &GameObject );
 	
 public:
-	Ship &ship;
+	GameObject &object;
 };
-

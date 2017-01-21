@@ -27,6 +27,8 @@
 #include "Enemy.h"
 #include "Projectile.h"
 #include "Upgrade.h"
+#include "EntityMovement.h"
+#include "Input.h"
 #include "Timer.h"
 
 class Game
@@ -45,12 +47,13 @@ private:
 private:
 	MainWindow& wnd;
 	Graphics gfx;
-	Ship ship;
-	Enemy enemy;
-	Projectile projectile;
-	Upgrade upgrade;
+	// Ship ship;
+	// Enemy enemy;
+	// Projectile projectile;
+	// Upgrade upgrade;
+	// EntityMovement movement;
+	// Input input;
 	Timer timer;
-	Input input;
 	/********************************/
 	/*  User Variables              */
 	/********************************/

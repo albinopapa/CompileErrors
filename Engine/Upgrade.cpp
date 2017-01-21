@@ -2,13 +2,7 @@
 
 
 
-Upgrade::Upgrade( Ship &ShipRef)
+Upgrade::Upgrade( GameObject &GameObject )
 	:
-	ship(ShipRef)
-{
-}
-
-
-Upgrade::~Upgrade()
-{
-}
+	object( &GameObject )
+{}

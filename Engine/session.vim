@@ -5,6 +5,8 @@ set cpo&vim
 map! <S-Insert> *
 nmap 	 
 nmap  o
+noremap  :tabprevious
+noremap  :tabnext
 vmap  "*d
 nmap - ggvG$
 map Q gq
@@ -102,7 +104,7 @@ set nosplitright
 wincmd t
 set winheight=1 winwidth=1
 exe '1resize ' . ((&lines * 42 + 43) / 86)
-exe '2resize ' . ((&lines * 43 + 43) / 86)
+exe '2resize ' . ((&lines * 41 + 43) / 86)
 argglobal
 setlocal keymap=
 setlocal noarabic
@@ -339,7 +341,7 @@ setlocal nowinfixwidth
 set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 1 - ((0 * winheight(0) + 21) / 43)
+let s:l = 1 - ((0 * winheight(0) + 20) / 41)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -347,7 +349,7 @@ normal! zt
 normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 42 + 43) / 86)
-exe '2resize ' . ((&lines * 43 + 43) / 86)
+exe '2resize ' . ((&lines * 41 + 43) / 86)
 tabedit MovementController.cpp
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -862,7 +864,7 @@ normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 41 + 43) / 86)
 exe '2resize ' . ((&lines * 42 + 43) / 86)
-tabedit Game.cpp
+tabedit Game.h
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -872,8 +874,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 137) / 274)
-exe 'vert 2resize ' . ((&columns * 137 + 137) / 274)
+exe 'vert 1resize ' . ((&columns * 137 + 137) / 274)
+exe 'vert 2resize ' . ((&columns * 136 + 137) / 274)
 argglobal
 setlocal keymap=
 setlocal noarabic
@@ -917,7 +919,7 @@ setlocal foldcolumn=0
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
-setlocal foldlevel=0
+setlocal foldlevel=1
 setlocal foldmarker={{{,}}}
 set foldmethod=syntax
 setlocal foldmethod=syntax
@@ -988,15 +990,15 @@ setlocal nowinfixwidth
 set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 45 - ((44 * winheight(0) + 42) / 84)
+let s:l = 42 - ((41 * winheight(0) + 42) / 84)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-45
-normal! 0
+42
+normal! 038|
 wincmd w
 argglobal
-edit Game.h
+edit Game.cpp
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -1039,7 +1041,7 @@ setlocal foldcolumn=0
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
-setlocal foldlevel=0
+setlocal foldlevel=1
 setlocal foldmarker={{{,}}}
 set foldmethod=syntax
 setlocal foldmethod=syntax
@@ -1110,6 +1112,8 @@ setlocal nowinfixwidth
 set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
+1
+normal! zc
 let s:l = 1 - ((0 * winheight(0) + 42) / 84)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
@@ -1117,10 +1121,9 @@ normal! zt
 1
 normal! 0
 wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 137) / 274)
-exe 'vert 2resize ' . ((&columns * 137 + 137) / 274)
-tabnext 4
+exe 'vert 1resize ' . ((&columns * 137 + 137) / 274)
+exe 'vert 2resize ' . ((&columns * 136 + 137) / 274)
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

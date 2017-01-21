@@ -1,19 +1,10 @@
 #include "Input.h"
 
-Input::Input()
+Input::Input( GameObject &GameObject )
+	object( GameObject )
 {}
 
-void Input::Update( MainWindow &Wnd)
+void Input::Update()
 {
-	is_space_pressed = IsSpacePressed( Wnd );
-}
-
-bool Input::IsSpacePressed( MainWindow &Wnd )
-{
-	if (Wnd.kbd.KeyIsPressed( VK_LEFT ) )
-	{
-		is_space_pressed = true;
-		return true;
-	}
-	else { return false; }
+	is_space_pressed = object.wnd.kbd.KeyIsPressed( VK_SPACE );
 }
